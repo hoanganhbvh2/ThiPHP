@@ -9,8 +9,9 @@
 
 <body>
     <?php
-     if(isset($_GET["user"])){
-        echo "xin chao:",$_GET["user"];
+    session_start();
+     if(isset($_SESSION["login"])){
+        echo "xin chao:",$_SESSION["login"],"<a href='logout.php'> logout</a>";
      }
     ?>
     <?php
