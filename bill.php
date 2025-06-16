@@ -9,6 +9,11 @@
 
 <body>
     <?php
+     if(isset($_GET["user"])){
+        echo "xin chao:",$_GET["user"];
+     }
+    ?>
+    <?php
 // Trường 
 // id int
 // customer string
