@@ -66,6 +66,7 @@
      $bill1=[];     
         foreach($bill as $v){
             if($_GET["tk"]==$v["customer"]||$_GET["tk"]==$v["month"]){
+        //  if(strpos($_GET["tk"],$v["customer"])||strpos($_GET["tk"],$v["month"])){
                 array_push($bill1,$v);
             }
         }
